@@ -4,7 +4,7 @@ const app = express();
 // set default port number
 const port = process.env.PORT || 3000;
 // binding our server to a static directory
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static("build"));
 // setting up route handler
 app.get("*", (req, res) => {
   res.sendFile(__dirname + "/build/index.html");
