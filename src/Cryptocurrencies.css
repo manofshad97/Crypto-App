@@ -1,0 +1,14 @@
+.positive{
+    color: green;
+}
+
+.positive::before{
+    content: '+';
+}
+
+
+
+.negative{
+    color: red;
+}
+
