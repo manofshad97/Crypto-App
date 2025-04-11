@@ -42,7 +42,7 @@ const Cryptocurrencies = ({ simplified }) => {
       <Row gutter={[32, 32]} className="crypto-card-container">
         {/* If cryptos exists, loop through it and for each currency display a card(begins with Col) which contains various details of the currency  */}
         {cryptos?.map((currency) =>
-          /*Condotions for giving the daily change no specified color  */
+          /*Conditions for giving the daily change no specified color  */
           millify(currency.change) === '-0' ||
           millify(currency.change) === '0' ? (
             <Col
